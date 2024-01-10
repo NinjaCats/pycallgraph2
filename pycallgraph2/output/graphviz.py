@@ -104,9 +104,8 @@ class GraphvizOutput(Output):
 
         self.verbose('Executing: {0}'.format(cmd))
         try:
-            proc = sub.Popen(cmd, stdout=sub.PIPE, stderr=sub.PIPE, shell=True)
-            ret, output = proc.communicate()
-            if ret:
+            proc = sub.run(cmd, capture_output=True)
+            if proc.returncode:
                 raise PyCallGraphException(
                     'The command "%(cmd)s" failed with error '
                     'code %(ret)i.' % locals())

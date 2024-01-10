@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycallgraph2"
+version = "1.3.0"
+description="Python Call Graph is a Python module that creates call graph visualizations for Python applications."
+dependencies = [
+    "pytest"
+]
+
+license = {file = "LICENSE"}
+classifiers=[
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU General Public License (GPL)',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.3',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Software Development :: Testing',
+    'Topic :: Software Development :: Debuggers',
+    ]
+
+[project.urls]
+Homepage = "https://github.com/daneads/pycallgraph2"
+Issues = "https://github.com/daneads/pycallgraph2/issues"
